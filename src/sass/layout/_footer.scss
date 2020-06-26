@@ -1,0 +1,109 @@
+.footer {
+    position: relative;
+    background-color: $bg-green-dark;
+    padding-top: 160px;
+    padding-bottom: 95px;
+
+    @include respond(mobile) {
+        text-align: center;
+    }
+}
+
+.footer__paragraph {
+    color: $color-green-light;
+    font-family: $lato-reg;
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+    width: 380px;
+    margin-right: 300px;
+
+    @include respond(mobile) {
+        margin-right: 0px;
+    }
+}
+
+.footer__text {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+    @include respond(mobile) {
+        justify-content: center;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 55px;
+}
+
+.footer__logo-box {
+
+    @include respond(mobile) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+
+.footer__list {
+    line-height: 28px;
+
+    @include respond(mobile) {
+        width: 100%;
+    }
+}
+
+.footer__list:first-of-type {
+    margin-right: 125px;
+
+    @include respond(mobile) {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+}
+
+.footer__lists {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__heading {
+    color: $color-white;
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+}
+
+.footer__link {
+    color: $color-green-light;
+    text-decoration: none;
+    font-family: $lato-reg;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.footer__link:hover {
+    color: $color-white;
+}
+
+.contacts__link {
+    @extend .footer__link;
+}
+
+.contacts__link:hover {
+    @extend .footer__link:hover;
+}
+
+.copyright {
+    padding: 25px 0;
+    background-color: $bg-green-light;
+    font-size: 14px;
+    font-family: $lato-reg;
+    color: $color-green-light;
+
+    @include respond(mobile) {
+        text-align: center;
+        font-size: 12px;
+    }
+}

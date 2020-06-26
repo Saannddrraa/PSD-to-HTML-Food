@@ -1,0 +1,23 @@
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 150px; 
+    padding-bottom: 245px;
+
+    @include respond(mobile) {
+        justify-content: center;
+    } 
+}
+
+.partner {
+    margin-right: 90px;
+
+    @include respond(mobile) {
+        margin: 0 35px 37px 0;
+    } 
+}
+
+.partner:last-of-type {
+    margin-right: 0;
+}
+

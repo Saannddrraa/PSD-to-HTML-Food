@@ -1,0 +1,76 @@
+.bg-right {
+    background-image: url('../../img/bg-right.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top: 105px;
+
+    @include respond(mobile) {
+        background-image: url('../../img/bg-right-mob.png');
+    }
+}
+
+.bg-right__heading {
+    color: $color-blue-dark;
+    font-size: 38px;
+    font-family: $lora-bold;
+    margin-top: 39px;
+    margin-bottom: 40px;
+    letter-spacing: 1.3px;
+
+    @include respond(mobile) {
+        font-size: 22px;
+    }
+}
+
+.bg-right__paragraph {
+    margin-bottom: 59px;
+    line-height: 2.4rem;
+    font-size: 16px;
+    font-family: $lato-reg;
+    color: $color-gray-light-2;
+    width: 578px;
+
+    @include respond(mobile) {
+        width: 335px;
+    }
+}
+
+.lists__heading {
+    font-size: 1.8rem;
+    font-family: $lora-bold;
+    color: $color-blue-dark;
+}
+
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    color: $color-gray-light-2;
+    font-size: 1.6rem;
+    margin-bottom: 8.5rem;
+}
+
+.list {
+    margin-right: 125px;
+    line-height: 2.4rem;
+}
+
+.list-item {
+
+    @include respond(mobile) {
+        color: $color-blue-dark;
+    }
+}
+
+.list-items {
+    list-style: none;
+}
+
+.list__heading {
+    font-size: 1.6rem;
+    margin-bottom: 22px;
+    margin-top: 25px;
+}
+
+.btn-bg-right {
+    margin-top: 117px;
+}

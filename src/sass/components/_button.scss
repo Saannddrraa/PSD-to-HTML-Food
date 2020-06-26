@@ -1,0 +1,30 @@
+.btn {
+
+    &:link,
+    &:visited {
+        width: 200px;
+        height: 55px;
+        border-radius: 30px;
+        background-color: $color-orange;
+        padding: 18px 51px;
+        color: $color-white;
+        font-size: 16px;
+        font-family: $lato-bold;
+        text-decoration: none;
+        transition: all .3s;
+    }
+
+    &:hover {
+        background-color: $color-orange-dark;
+        text-decoration: none;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    @include respond(mobile) {
+        font-size: 14px;
+    }
+}

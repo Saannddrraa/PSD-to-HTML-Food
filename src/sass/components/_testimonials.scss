@@ -1,0 +1,112 @@
+.testimonials {
+    padding-top: 95px;
+    padding-bottom: 130px;
+}
+
+.slider {
+    background-color: $color-blue;
+    color: $color-white;
+    width: 980px;
+    height: 320px;
+    border-radius: 10px;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center; 
+
+    @include respond(mobile) {
+        width: 335px;
+        height: 355px;
+    }
+}
+
+.slick-slide {
+    display: flex;
+    padding-left: 80px;
+
+    @include respond(mobile) {
+        display: block;
+        padding-left: 0px;
+    }
+}
+
+.heading__testimonials {
+    font-family: $lora-bold;
+    font-size: 34px;
+    letter-spacing: 1.3px;
+    color: $color-blue-dark;
+    margin-bottom: 85px;
+    text-align: center;
+
+    @include respond(mobile) {
+        font-size: 22px;
+    }
+}
+
+.slider__box {
+    display: flex;
+
+    @include respond(mobile) {
+        display: block;
+        padding: 45px 50px;
+    }
+}
+
+.slick-initialized .slick-slide {
+    @include respond(mobile) {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center
+    }
+}
+
+.slider__info {
+    display: flex;
+    align-items: center; 
+}
+
+.user__name {
+    font-size: 22px;
+    font-family: $lora-bold;
+
+    @include respond(mobile) {
+        font-size: 16.6px;
+    } 
+}
+
+.slider__img {
+    @include respond(mobile) {
+        margin-bottom: 38px;
+    }  
+}
+
+.slider__user-box {
+    @include respond(mobile) {
+        display: flex;
+    } 
+}
+
+.user__about {
+    font-size: 10px;
+    font-family: $lato-black;
+
+    @include respond(mobile) {
+        font-size: 7.55px;
+    } 
+}
+
+.user__par {
+    font-size: 18px;
+    width: 437px;
+    margin-left: 100px;
+
+    @include respond(mobile) {
+        font-size: 14px;
+        width: 235px;
+        margin-left: 0px;
+        text-align: center;
+    } 
+}
+
+.user {
+    float: left;
+}

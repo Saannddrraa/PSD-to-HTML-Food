@@ -1,0 +1,135 @@
+.tabs {
+    padding-top: 90px;
+    text-align: center;
+    padding-bottom: 114px;
+}
+
+.tabs__heading {
+    letter-spacing: 1.3px;
+    color: $color-blue-dark;
+    font-size: 34px;
+    font-family: $lora-bold;
+
+    @include respond(mobile) {
+        font-size: 22px;
+    }
+}
+
+.heading__paragraph {
+    color: $color-gray-light-1;
+    font-size: 18px;
+    font-family: $lato-reg;
+    margin-top: 25px;
+
+    @include respond(mobile) {
+        font-size: 16px;
+    }
+}
+
+.tab__heading {
+    font-size: 46px;
+    font-weight: 700;
+    color: $color-green;
+    margin-bottom: 54px;
+
+    @include respond(mobile) {
+        font-size: 22px;
+    }
+}
+
+.tabs__paragraph {
+    width: 600px;
+    font-family: $lato-reg;
+    font-size: 18px;
+    color: $color-blue-dark;
+    margin-right: 180px;
+    line-height: 27px;
+
+    @include respond(mobile) {
+        width: 316px;
+        font-size: 14px;
+        text-align: center;
+        margin-right: 0px;
+    }
+}
+
+.tabs__paragraph:nth-of-type(2) {
+    margin-top: 35px;
+    margin-bottom: 48px;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+}
+
+.half-one {
+    text-align: left;
+
+    @include respond(mobile) {
+        text-align: center;
+    }
+}
+
+.tabs-nav {
+    list-style: none;
+    padding-top: 83px;
+    padding-bottom: 102px;
+
+    &::after {
+        margin: 20px auto;
+        display: block;
+        content: "";
+        height: 5px;
+        width: 633px;
+        background-color: $color-gray-light-3;
+
+        @include respond(mobile) {
+            width: 100%;
+        }
+    }
+}
+
+.tabs-nav__item {
+    display: inline-block;
+    margin-right: 40px;
+
+    @include respond(mobile) {
+        margin-right: 0px;
+    }
+}
+
+.tabs-nav__link {
+    position: relative;
+    color: $color-gray-light-2;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: $lora-bold;
+    font-weight: 600;
+    padding: 0px 25px;
+
+    &:hover {
+        color: $color-blue-dark;
+
+        &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            height: 5px;
+            width: 213px;
+            background-color: $color-green;
+            margin: 20px 0px;
+        }
+    }
+
+    @include respond(mobile) {
+        font-size: 16px;
+    }
+}
+
+.half-two {
+
+    @include respond(mobile) {
+        display: none;
+    }
+}

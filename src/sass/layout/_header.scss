@@ -1,0 +1,139 @@
+.header {
+    background-image: url("../../img/banner.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    @include respond(mobile) {
+        background-position: right;
+    }
+}
+
+.header__banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    color: $color-white;
+    width: 118rem;
+
+    @include respond(mobile) {
+        padding: 0 5%;
+        width: 0;
+        left: 5%;
+    }
+}
+
+.header__text-box {
+    width: 380px;
+}
+
+.header__paragraph {
+    font-size: 18px;
+    font-family: $lato-reg;
+    margin: 41px 0 47px 0px;
+    line-height: 28px;
+
+    @include respond(mobile) {
+        font-size: 14px;
+    }
+}
+
+.header__logo-box {
+    float: left;
+    margin-top: 35px;
+}
+
+.header__list {
+    float: right;
+    margin-top: 38px;
+
+    @include respond(mobile) {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: $bg-color-orange;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        transition: 0.5s;
+    }
+}
+
+
+.header__item {
+    display: inline-block;
+    margin-right: 48px;
+}
+
+.header__item:last-of-type {
+    margin-right: 31px;
+}
+
+.header__link {
+    position: relative;
+    text-decoration: none;
+    color: $color-white;
+    font-size: 16px;
+    font-family: $lato-bold-sans;
+    transition: 3s;
+
+    &:hover,
+    &:active {
+        &::after {
+            @extend .header__link;
+            position: absolute;
+            display: block;
+            content: "";
+            height: 2px;
+            width: 55px;
+            background-color: $color-orange-dark;
+            margin: 12px auto;
+            left: 0;
+            right: 0;
+        }
+
+        @include respond(mobile) {
+            padding: 50px 0;
+        }
+    }
+}
+
+.show-nav-btn,
+.hide-nav-btn {
+    transition: 0.4s;
+    font-size: 22px;
+    color: $color-white;
+    cursor: pointer;
+    display: none;
+
+    @include respond(mobile) {
+        display: block;
+    }
+}
+
+.show-nav-btn {
+    float: right;
+}
+
+.show-nav-btn .fa-bars {
+    margin-top: 38px;
+}
+
+.check {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+.hide-nav-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.check:checked ~ .header__list {
+    right: 0;
+}

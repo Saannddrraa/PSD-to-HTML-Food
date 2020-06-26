@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Lora Bold', serif;
+    src: url(fonts/Lora-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Lora Bold', sans-serif;
+    src: url(fonts/Lora-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Lato Regular', sans-serif;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Lato Bold', sans-serif;
+    src: url(fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Lato Regular Italic', sans-serif;
+    src: url(fonts/Lato-RegularItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Lato Black', sans-serif;
+    src: url(fonts/Lato-Black.ttf);
+}
+
+.heading-primary {
+    font-family: $lora-bold;
+    font-size: 68.01px;
+    line-height: 79px;
+    letter-spacing: 1.6px;
+}
